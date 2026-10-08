@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DhanRatan Games</string>
+    <string name="welcome_subtitle">Welcome to</string>
+    <string name="official_apk_subtitle">Official Matka Play APK</string>
+    <string name="login">Login</string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="security_mpin">4-Digit Security MPIN</string>
+    <string name="main_markets">Main Markets</string>
+    <string name="starline_markets">DhanRatan Starline</string>
+    <string name="deposit">Deposit</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="support">Support</string>
+    <string name="add_fund">Add Fund</string>
+    <string name="withdraw_fund">Withdraw Fund</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="history_dashboard">History Dashboard</string>
+    <string name="game_rates_and_rules">Game Rates &amp; Rules</string>
+</resources>

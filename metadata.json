@@ -1,0 +1,6 @@
+{
+  "name": "DhanRatan Games",
+  "description": "Official DhanRatan Games digital market and wallet platform with admin-controlled market draws, result notifications, deposits, and realistic withdrawals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

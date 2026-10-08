@@ -1,0 +1,55 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Authenticated DhanRatan user profile linked to a Google Sign-In Firebase Auth session.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Firebase Auth UID of the account owner (must match request.auth.uid)."
+        },
+        "fullName": {
+          "type": "string",
+          "description": "Display name of the player (1-100 characters)."
+        },
+        "username": {
+          "type": "string",
+          "description": "Username or Google email identifier (1-120 characters)."
+        },
+        "phone": {
+          "type": "string",
+          "description": "10-digit mobile number associated with the player profile."
+        },
+        "balance": {
+          "type": "integer",
+          "description": "Current wallet balance in INR points (0 to 100000000)."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the user profile was first created (FieldValue.serverTimestamp())."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the user profile was last updated (FieldValue.serverTimestamp())."
+        }
+      },
+      "required": [
+        "userId",
+        "fullName",
+        "username",
+        "createdAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/UserProfile"
+      },
+      "description": "Per-user private profile documents owned by the authenticated Firebase user."
+    }
+  }
+}
